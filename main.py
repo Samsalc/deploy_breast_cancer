@@ -49,6 +49,8 @@ async def predict(
     symmetry_worst: float,
     fractal_dimension_worst: float
 ):
+
+
     dictionary = {
         'radius_mean': radius_mean,
         'texture_mean': texture_mean,
@@ -93,6 +95,7 @@ async def predict(
             detail=str(e),
             status_code=status.HTTP_400_BAD_REQUEST
         )
+
 
 
 
